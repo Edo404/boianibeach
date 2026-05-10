@@ -264,41 +264,25 @@ export default function Reviews() {
 						</div>
 					</div>
 
-					{/* Navigation Arrows */}
-					{reviews.length > 1 && (
-						<>
-							<button
-								onClick={() => {
-									goPrev();
-									setAutoPlay(false);
-								}}
-								className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-sea/80 hover:bg-sea text-white flex items-center justify-center transition-all hover:shadow-lg"
-								aria-label="Previous review"
-							>
-								<svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-								</svg>
-							</button>
-
-							<button
-								onClick={() => {
-									goNext();
-									setAutoPlay(false);
-								}}
-								className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-sea/80 hover:bg-sea text-white flex items-center justify-center transition-all hover:shadow-lg"
-								aria-label="Next review"
-							>
-								<svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-								</svg>
-							</button>
-						</>
-					)}
 				</div>
 
 				{/* Dot Navigation */}
 				{reviews.length > 1 && (
-					<div className="flex justify-center gap-2 mt-6">
+					<div className="flex items-center justify-center gap-3 mt-6">
+						<button
+							onClick={() => {
+								goPrev();
+								setAutoPlay(false);
+							}}
+							className="w-7 h-7 rounded-full border border-gray-300 text-sea hover:border-sea hover:bg-sea/10 flex items-center justify-center transition-colors"
+							aria-label="Previous review"
+						>
+							<svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.25} d="M15 19l-7-7 7-7" />
+							</svg>
+						</button>
+
+						<div className="flex items-center gap-2">
 						{reviews.map((_, index) => (
 							<button
 								key={index}
@@ -311,6 +295,20 @@ export default function Reviews() {
 								aria-label={`Go to review ${index + 1}`}
 							/>
 						))}
+						</div>
+
+						<button
+							onClick={() => {
+								goNext();
+								setAutoPlay(false);
+							}}
+							className="w-7 h-7 rounded-full border border-gray-300 text-sea hover:border-sea hover:bg-sea/10 flex items-center justify-center transition-colors"
+							aria-label="Next review"
+						>
+							<svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.25} d="M9 5l7 7-7 7" />
+							</svg>
+						</button>
 					</div>
 				)}
 

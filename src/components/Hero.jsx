@@ -14,7 +14,7 @@ export default function Hero() {
         <img
           src="/images/logo-w.png"
           alt="Boiani Beach Logo"
-          className="mx-auto mb-4 w-64 sm:w-80 md:w-[45rem] drop-shadow-xl"
+          className="mx-auto mb-4 w-64 sm:w-80 md:w-[36rem] drop-shadow-xl"
         />
         {/* <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-bold mb-6 leading-tight">
           {t('hero_title')}

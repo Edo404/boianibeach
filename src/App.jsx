@@ -4,6 +4,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Restaurant from './components/Restaurant';
 import Gallery from './components/Gallery';
+import Events from './components/Events';
 import Reviews from './components/Reviews';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -18,6 +19,7 @@ export default function App() {
       <Services />
       <Restaurant />
       <Gallery />
+      <Events />
       <Reviews />
       <Contact />
       <Footer />

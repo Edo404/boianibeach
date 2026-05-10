@@ -53,3 +53,21 @@ h1, h2, h3 {
 .animate-fadeInScale {
   animation: fadeInScale 0.5s ease-out;
 }
+
+@keyframes eventsMarquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.events-marquee-track {
+  animation: eventsMarquee 28s linear infinite;
+  will-change: transform;
+}
+
+.events-marquee:hover .events-marquee-track {
+  animation-play-state: paused;
+}
