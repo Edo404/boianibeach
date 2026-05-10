@@ -4,6 +4,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Restaurant from './components/Restaurant';
 import Gallery from './components/Gallery';
+import Reviews from './components/Reviews';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import MobileBookingFab from './components/MobileBookingFab';
@@ -17,6 +18,7 @@ export default function App() {
       <Services />
       <Restaurant />
       <Gallery />
+      <Reviews />
       <Contact />
       <Footer />
       <MobileBookingFab />

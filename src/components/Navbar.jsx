@@ -16,6 +16,7 @@ export default function Navbar() {
     { href: '#about', key: 'nav_about' },
     { href: '#services', key: 'nav_services' },
     { href: '#gallery', key: 'nav_gallery' },
+    { href: '#reviews', key: 'nav_reviews' },
     { href: '#contact', key: 'nav_contact' },
   ];
 
